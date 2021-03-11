@@ -75,6 +75,7 @@ class State():
       self.update()
       if self.has_won():
         msgbox.showinfo(title="Victory", message="You win!")
+        self.randomize()
 
   def update(self):
     for i, btn in enumerate(self.buttons):
